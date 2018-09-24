@@ -5,7 +5,6 @@
  */
 package aula1;
 
-import com.sun.xml.internal.bind.v2.runtime.output.SAXOutput;
 import java.util.Scanner;
 
 /**
