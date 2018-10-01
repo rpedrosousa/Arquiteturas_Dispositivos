@@ -36,7 +36,7 @@ public class Aula2 {
         System.out.println("Os é Numero Primo: " + prime);
         //---------------------------------------------------
         
-        int[] array = {1,2,3,4,5,6,7};
+        int[] array = {1,2,3,4,5,5,7};
         String str = ArrayUtilities.toString(array);
         System.out.println("Array é: " + str);
         //---------------------------------------------------
@@ -51,6 +51,23 @@ public class Aula2 {
         System.out.println("A Copia do array é: " + copy);
         //---------------------------------------------------
         //3.E
+        boolean existe = ArrayUtilities.contain(array,4);
+        System.out.println("Se o valor existe? "+ existe);
+        
+        
+        boolean duplicate = ArrayUtilities.duplicate(array);
+        System.out.println("O valor é duplicado? "+ duplicate);
+        
+        int indexOf = ArrayUtilities.index(array, 7);
+        System.out.println("index of " + indexOf);
+        
+        int[] add= ArrayUtilities.addOf(array,2);
+        System.out.println("New array:" + ArrayUtilities.toString(add));
+        
+        int[] remove = ArrayUtilities.removeOf(array,7);
+        System.out.println("New array:" + ArrayUtilities.toString(remove));
+               
+        
     }
 
 }

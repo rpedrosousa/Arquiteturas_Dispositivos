@@ -29,7 +29,7 @@ public class Aula1 {
         double celsius = CalcularEmCelsius(28);
         System.out.println("O valor do F = 28 em Celsius é: " + celsius);
         //---------------------------------------------
-        double segundos = CalcularTempo(1, 20, 42);
+        double segundos = CalcularTempo(42, 20, 1);
         System.out.println("Os segundos é: " + segundos);
         //---------------------------------------------
         int[] arr = {1, 2, 3, 4, 56, 7, 89, 10};
