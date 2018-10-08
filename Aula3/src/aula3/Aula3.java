@@ -53,6 +53,45 @@ public class Aula3 {
        int[] numbers = {1,2,3,4};
        incrementFirstOf(numbers);
        System.out.println(numbers);
+       
+       //-----------------------------------------------------------------------
+       // FICHA 3
+       // 2. a)
+       final int NumberOfLetters = 'z'-'a'+1;
+       final char[] allLetters = new char[NumberOfLetters];
+       char allLower = CharacterUtilities.lowerLetterSuccessorOf(allLetters,'z');
+       System.out.println(allLower);
+       // 2. b)
+       char predecessor = CharacterUtilities.lowerLetterPredecessorOf('a');
+       System.out.println(predecessor);
+       // 2. c)
+       char stepsSuccess = CharacterUtilities.lowerLetterSuccessorStepsOf('x',4);
+       System.out.println(stepsSuccess);
+       // 2. d)
+       char PrestepsSuccess = CharacterUtilities.lowerLetterPredecessorStepsOf('b',4);
+       System.out.println(PrestepsSuccess);
+       // 2. e)
+       char [] values = {'a','b','r','a','k','a','d','a','b','r','a','-','n','a'};
+       int occurrences = CharacterUtilities.occurrencesOfCharacterin(values,'b');
+       System.out.println(occurrences);
+       // 2. f)
+       char [] replace = CharacterUtilities.replaceCharacterIn(values,'b','z');
+       System.out.println(replace);
+       // 2. g)
+       char [] juras = {'-','a','n','a','p','e','t','r','a'};
+       char [] concatena = CharacterUtilities.concatenationOf(values,juras);
+       System.out.println(concatena);
+       // 2. h)
+       char [] copy = CharacterUtilities.copyOfPartOf(values,'a','k');
+       System.out.println(copy);
+       // 3. a)
+       String str = "Alakazam";
+       String cipher = CaesarCipherDecipherer.cipher(str, 3);
+       System.out.println("Cipher: " + cipher);
+       // 3. b)
+       String decipher = CaesarCipherDecipherer.decipher(cipher,3);
+       System.out.println("Decipher: " + decipher);
+       
     }
     
     public static void increment(int value){
