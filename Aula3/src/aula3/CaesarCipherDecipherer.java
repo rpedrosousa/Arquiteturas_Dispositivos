@@ -14,8 +14,13 @@ public class CaesarCipherDecipherer {
     static String cipher(String str, int steps) {
         String ciphered = "";
         for (int j = 0; j < str.length(); j++) {
-            char cipher = CharacterUtilities.lowerLetterSuccessorStepsOf(str.charAt(j), steps);
-            ciphered += cipher;            
+            char c = str.charAt(j);
+            char cipher = CharacterUtilities.lowerLetterSuccessorStepsOf(c, steps);
+            if(c != ' '){
+                ciphered += cipher;
+            }else{
+                ciphered += " ";
+            }
         }
         return ciphered;
     }
@@ -23,8 +28,13 @@ public class CaesarCipherDecipherer {
     static String decipher(String cipher, int i) {
         String ciphered = "";
         for (int j = 0; j < cipher.length(); j++) {
-            char decipher = CharacterUtilities.lowerLetterPredecessorStepsOf(cipher.charAt(j), i);
-            ciphered += decipher;            
+            char c = cipher.charAt(j);
+            char decipher = CharacterUtilities.lowerLetterPredecessorStepsOf(c, i);
+            if(c != ' '){
+                ciphered += decipher; 
+            }else{
+                ciphered += " ";
+            }     
         }
         return ciphered;
     }
