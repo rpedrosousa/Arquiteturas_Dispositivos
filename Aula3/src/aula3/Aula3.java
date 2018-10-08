@@ -85,7 +85,7 @@ public class Aula3 {
        char [] copy = CharacterUtilities.copyOfPartOf(values,'a','k');
        System.out.println(copy);
        // 3. a)
-       String str = "Octavio Josefina";
+       String str = "Octavio Josefina ";
        String cipher = CaesarCipherDecipherer.cipher(str, 3);
        System.out.println("Cipher: " + cipher);
        // 3. b)
